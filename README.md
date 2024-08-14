@@ -1,6 +1,8 @@
-# Backend
+# Backend Instructions
 
-## Required:
+Run this backend to make the functionalities on the [frontend](https://github.com/sonyerg/second-test-frontend) to work.
+
+## Required Technology:
 
 - Mongodb
 - Docker
@@ -8,6 +10,8 @@
 
 ## Run in root directory
 
+Build and and run the cotainers
+
 ```
-docker-compose build
+docker-compose up --build
 ```
