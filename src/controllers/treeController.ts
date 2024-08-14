@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
+
 import CalculationTreeModel from "../models/CalculationTree";
 
-export const startTree = async (req: Request, res: Response) => {
+export async function startTree(req: Request, res: Response) {
   const { startingNumber } = req.body;
 
   const newTree = new CalculationTreeModel({
@@ -15,9 +16,9 @@ export const startTree = async (req: Request, res: Response) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to start calculation tree" });
   }
-};
+}
 
-export const addOperation = async (req: Request, res: Response) => {
+export async function addOperation(req: Request, res: Response) {
   const { treeId } = req.params;
   const { operation, rightNumber } = req.body;
 
@@ -58,9 +59,9 @@ export const addOperation = async (req: Request, res: Response) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to add operation" });
   }
-};
+}
 
-export const getTree = async (req: Request, res: Response) => {
+export async function getTree(req: Request, res: Response) {
   const { treeId } = req.params;
 
   try {
@@ -73,4 +74,4 @@ export const getTree = async (req: Request, res: Response) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch calculation tree" });
   }
-};
+}
