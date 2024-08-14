@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import treeRoutes from "./routes/treeRoutes"; // Import your routes
+import treeRoutes from "./routes/treeRoutes";
 
 const app = express();
 
