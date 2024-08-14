@@ -1,17 +1,8 @@
-# Backend Instructions
+## Technology Stack:
 
-Run this backend locally to make the functionalities on the [frontend](https://github.com/sonyerg/second-test-frontend) to work.
-
-## Required Technology:
-
+- NodeJS
 - Mongodb
 - Docker
-- NodeJS
+- Render
 
-## Build and run the cotainers
-
-Make sure docker engine is running then run this command on the terminal in the root directory.
-
-```
-docker-compose up --build
-```
+Webservice api "https://second-test-backend.onrender.com"
