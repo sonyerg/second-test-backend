@@ -1,6 +1,6 @@
 # Backend Instructions
 
-Run this backend to make the functionalities on the [frontend](https://github.com/sonyerg/second-test-frontend) to work.
+Run this backend locally to make the functionalities on the [frontend](https://github.com/sonyerg/second-test-frontend) to work.
 
 ## Required Technology:
 
@@ -8,9 +8,9 @@ Run this backend to make the functionalities on the [frontend](https://github.co
 - Docker
 - NodeJS
 
-## Run in root directory
+## Build and run the cotainers
 
-Build and and run the cotainers
+Make sure docker engine is running then run this command on the terminal in the root directory.
 
 ```
 docker-compose up --build
